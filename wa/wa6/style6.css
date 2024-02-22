@@ -1,0 +1,37 @@
+html{
+font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background: url(scrubdad1.jpeg) no-repeat;
+}
+
+.box  {
+    position: absolute;
+    bottom: 180mm;
+    right: 50mm;
+    background-color: rgba(0,0,0,.3);
+    padding: 2mm;
+    color: white;
+    font-size: 10mm;
+}
+
+.container {
+    position: absolute;
+    top: 5mm;
+    right: 270mm;
+    background-color: rgba(235, 235, 241, 0.866);
+    padding: 1mm;
+    color: rgb(12, 25, 68);
+    font-size: 15mm;
+}
+
+p{
+    position: absolute;
+    top: 30mm;
+    right: 60mm;
+    background-color: rgba(237, 232, 232, 0.816);
+    padding: 3mm;
+    border: 1mm solid rgb(212, 204, 204);
+}
+
