@@ -1,0 +1,70 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(211, 193, 210);
+    color: rgb(25, 25, 45);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+   
+}
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: rgb(140, 95, 102);
+    font-size: 15px;
+}
+
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:rgb(211, 193, 210);
+}
+
+
+img{
+    width:614.4px;
+    height: 384px;
+    padding: 1%;
+    position: relative;
+    transition: width 1s, height 1s;
+
+}
+img:hover{
+    width: 819.2px;
+    height: 512px;
+
+}
+
+#indigo-ball{
+    background-color: rgb(25, 25, 45);
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:1vw;
+    right: 1vw;
+    top:0;
+    animation-name: indigo-ball-move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes indigo-ball-move {
+    0%{
+        margin-right: 100%;
+    }
+    50%{
+        margin-left: 95%;
+
+    }
+    100%{
+        margin-right: 100%;
+    
+    }
+
+}
