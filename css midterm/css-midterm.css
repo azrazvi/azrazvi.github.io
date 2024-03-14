@@ -1,20 +1,19 @@
 body {
-    background-color: #fff;
-    color: #333;
+    background-color: #8aaed5;
+    color: #fff;
     margin: 0;
-    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+    font: 10em;
+    font-family: 'Times New Roman', Times, serif;
   }
 
-  img {
-      max-width: 100%;
-      display: block;
-  }
+
   
   .heading {
-    font-size: 100%;
-    padding: 50px 20px;
+    font-size: 2.5em;
+    padding: 30px 20px;
     margin: 0 auto;
     max-width: 980px;
+    text-align: center;
   }
   
   .grid {
