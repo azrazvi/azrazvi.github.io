@@ -6,65 +6,115 @@ body {
     font-family: 'Times New Roman', Times, serif;
   }
 
+  .ah{
+    display: flex;
+    justify-content: center;
+  }
+img{
+  max-width: 20em;
+}
+.backup {
+  position: relative;
+  bottom: 10px;
+  max-width: 30em;
+  width: 50%;
+  font-size: 20px;
+  border-color: rgba(85, 85, 85, 0.2);
+  background-color: azure;
+}
 
-  
   .heading {
-    font-size: 2.5em;
-    padding: 30px 20px;
+    font-size: 3.5em;
+    padding-bottom: 20px;
+    padding-top: 0;
     margin: 0 auto;
     max-width: 980px;
     text-align: center;
   }
-  
-  .grid {
-    margin: 0 auto;
-    padding: 0 20px;
-    max-width: 980px;
-    display: flex;
-    column-count: 2;
-  }
-  
-  nav {
-    background-color: #000;
-    padding: .5em;
-    position: sticky;
-    top: 0;
-  }
-  
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: .5em 1em;
-  }
-  
-  .photos {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    gap: 1px;
-  }
 
-  .feature {
-      width: 200px;
-      float: left;
-      margin: 10px;
-  }
+  .intro{
+    position: static;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    font-size: large;
+    color: black;
+}
+h4{
+  margin: 0px;
+}
+
+h1{
+  margin: 0px;
+}
+
+h3{
+margin-bottom: 0px;
+}
+
+  
+.grid {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.624);
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.nestgrid{
+  margin: 0 ;
+  padding: 0px;
+  display: grid;
+  text-align: center;
+  max-width: 950px;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+
+
+nav {
+  background-color: #000;
+  padding: .5em;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: .5em 1em;
+}
+  
+
 
   @media screen and (max-width: 400px){
 .grid{
     display: flex;
     flex-direction: column;
-  }  
+  
+  }
+
+  .nestgrid{
+    display: flex;
+    flex-direction: column;
+  }    
   .heading{
     display: flex;
     flex-direction: column;
@@ -73,9 +123,15 @@ body {
     flex-direction: column;
     gap: 20px;
     text-align: center;
-
   }
+  nav{
+    position: static;
+    display: flex;
+    flex-direction: column;
+  }
+ 
 
+  
   }
 
  

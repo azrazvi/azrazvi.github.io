@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: pink;
+            color: indigo;
+        }
+    </style>
+</head>
+<body>
+    <button type = "button"> hello</button>
+
+    <script>
+        const button = document.querySelector("button");
+        button.addEventListener('click', changeText);
+
+        const hrading = document.querySelector("h1")
+
+        function changeText() {
+            // alert('text successful!');
+            const head = prompt("tell me a secret")
+            heading.textContent = head;
+        }
+    </script>
+    
+</body>
+</html>
