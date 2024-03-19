@@ -20,10 +20,7 @@ img{
   width: 50%;
   font-size: 20px;
   border-color: rgba(85, 85, 85, 0.2);
-}
-button{
-  background-color: lightgreen;
-  position: relative ;
+  background-color: azure;
 }
 
   .heading {
