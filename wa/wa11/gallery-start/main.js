@@ -7,14 +7,13 @@ const overlay = document.querySelector('.overlay');
 /* Declaring the array of image filenames */
 
 /* Declaring the alternative text for each image file */
-const filenames = ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg']
+const filenames = ['1.jpeg','2.jpeg','3.jpeg','4.jpeg','5.jpeg']
 const alts   = {
-    '1jpg' : 'huntington beach sunset',
-    '2jpg' : 'boulder sunset',
-    '3jpg' : 'mountain view with blue sky',
-    '4jpg' : 'concert with lasers',
-    '5jpg' : 'breckenridge snowy mountains',
-
+'1jpg' : 'a',
+'2jpg' : 'e',
+'3jpg' : 'i',
+'4jpg' : 'o',
+'5jpg' : 'u',
 
     /*
 '1jpg' : 'a',
@@ -36,7 +35,6 @@ const newImage = document.createElement('img');
 newImage.setAttribute('src',nsrc);
 newImage.setAttribute('alt',nalt);
 thumbBar.appendChild(newImage);
-
 //change displayed image when thumbnail is clicked
 newImage.addEventListener('click',() => {
     displayedImage.setAttribute('src',nsrc);
