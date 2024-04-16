@@ -5,7 +5,9 @@ const answerbtn = document.querySelector("#js-tweet");
 answerbtn.addEventListener('click', getAnswer);
 const answerText = document.querySelector("#js-answer-text");
 
-const endpoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestion';
+const endpoint = ';https://type.fit/api/quotes';
+
+//https://type.fit/api/quotes
 
 let answer = '';
 
@@ -17,10 +19,10 @@ async function getQuote() {
                 throw Error(response.statusText)
             }
             const json = await response.json();
-            console.log(json['question']);
-            displayQuote(json['question']);
-            console.log(json['answer']);
-            answer = json['answer'];
+            console.log(json['text']);
+            displayQuote(json['text']);
+            console.log(json['author']);
+            answer = json['author'];
             answerText.textContent = '';
     } catch (err) {
         console.log(err);
@@ -37,6 +39,7 @@ function displayQuote (quote) {
 }
 function getAnswer() {
 
-    answerText.textContent = answer;
+    answerText.textContent = author;
 }
 getQuote();
+
