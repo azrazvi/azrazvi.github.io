@@ -26,8 +26,7 @@ const button1 = document.querySelector("button1");
 
 
           document.getElementById('inc').value = newValue;
-          var sound = document.getElementById('audio1');
-          sound.play();
+
   
         }
 
@@ -40,8 +39,7 @@ const button1 = document.querySelector("button1");
 
 
           document.getElementById('inc').value = newValue;
-          var sound = document.getElementById('audio');
-          sound.play();
+
   
         }
 
@@ -54,8 +52,7 @@ const button1 = document.querySelector("button1");
 
 
           document.getElementById('inc').value = newValue;
-          var sound = document.getElementById('audio');
-          sound.play();
+
   
   
         }
